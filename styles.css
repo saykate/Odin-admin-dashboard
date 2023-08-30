@@ -35,23 +35,51 @@
   
   .main__container {
     display: grid;
+    grid-template-columns: 1fr 4fr;
     grid-template-areas: 
-    "sidebar nav nav nav nav"
-    "sidebar content content content content"
-    "sidebar content content content content"
-    "sidebar content content content content"
-    "sidebar content content content content"
+    "sidebar nav"
+    "sidebar content"
+    "sidebar content"
+    "sidebar content"
+    "sidebar content"
     ;
   }
 
   .sidebar__container {
-    border: 1px solid black;
-    height: 100vh;
+    background: rgb(239, 209, 131);
+    padding: 15px;
     grid-area: sidebar;
     display: grid;
+    grid-template-rows: 1fr 6fr 3fr 3fr 3fr;
+    gap: 40px;
   }
 
-  .nav-bar__container {
+  .nav__container {
+    display: grid;
+    gap: 10px;
+  }
+
+  .sidebar__item {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 1.25rem;
+  }
+
+  .dashboard {
+    padding-left: 0;
+    font-size: 1.5rem;
+    gap: 20px;
+  }
+
+  .support__container {
+    display: grid;
+    gap: 10px;
+    }
+
+  .header__container {
     border: 1px solid blueviolet;
     grid-area: nav;
     display: grid;
