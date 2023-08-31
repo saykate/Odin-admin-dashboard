@@ -36,8 +36,9 @@
   .main__container {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
     grid-template-areas: 
-    "sidebar nav"
+    "sidebar header"
     "sidebar content"
     "sidebar content"
     "sidebar content"
@@ -54,7 +55,7 @@
     gap: 40px;
   }
 
-  .nav__container {
+  .sidebar-nav__container {
     display: grid;
     gap: 10px;
   }
@@ -80,9 +81,82 @@
     }
 
   .header__container {
-    border: 1px solid blueviolet;
-    grid-area: nav;
+    grid-area: header;
+    padding: 2rem;
     display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .top__menu {
+    /* border: 1px solid black; */
+    display: grid;
+    align-items: center;
+    align-content: start;
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .search {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+
+  .search__icon {
+    width: 25px;
+  }
+
+  #input__bar {
+    border-radius: 20px;
+    border: none;
+    background-color: lightgray;
+    width: 32rem;
+  }
+
+  .info__bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: start;
+  }
+
+  .alarm__icon {
+    justify-self: end;
+  }
+
+  .user__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(./images/james-discombe-06o01CtKjGw-unsplash\ copy.jpeg);
+    background-size: cover;
+    margin-left: 25px;
+  }
+
+  .lower__menu {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .user__icon-lower {
+    background-image: url('images/james-discombe-06o01CtKjGw-unsplash\ copy.jpeg');
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  .lower__left {
+    border: 1px solid pink;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+  }
+
+  .lower__right {
+    border: 1px solid pink;
   }
 
   .contents__container {
