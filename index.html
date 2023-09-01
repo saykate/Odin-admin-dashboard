@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <main class="main__container">
@@ -71,8 +74,8 @@
                 <div class="lower__left">
                     <div class="user__icon-lower"></div>
                     <div class="user__greeting">
-                        <p>Hi there,</p>
-                        <p>Katie Sayers (@katie)</p>
+                        <p class="line-one">Hi there,</p>
+                        <p class="line-two">Katie Sayers(@katie)</p>
                     </div>
                 </div>
                 <div class="lower__right">
@@ -82,7 +85,92 @@
                 </div>
             </div>
         </div>
-        <div class="contents__container"></div>
+        <div class="contents__container">
+            <div class="contents__col-one">
+                <h2>Your Projects</h2>
+                <div class="projects__container">
+                    <div class="card">
+                        <h3>Super Dope Digs</h3>
+                        <p class="project-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid tempore accusamus officia adipisci rem ipsam, repudiandae amet ducimus nihil sed, totam, maxime sit? Rerum!</p>
+                        <div class="project__icons">
+                            <img src="images/star-plus-outline.svg" alt="star-plus-outline" width="25" height="25">
+                            <img src="images/eye-plus-outline.svg" alt="eye-plus-outline" width="25" height="25">
+                            <img src="images/share-variant-outline.svg" alt="share-variant-outline" width="25" height="25">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Pretty Dope Digs</h3>
+                        <p class="project-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic alias odio doloremque, quas nesciunt sunt.</p>
+                        <div class="project__icons">
+                            <img src="images/star-plus-outline.svg" alt="star-plus-outline" width="25" height="25">
+                            <img src="images/eye-plus-outline.svg" alt="eye-plus-outline" width="25" height="25">
+                            <img src="images/share-variant-outline.svg" alt="share-variant-outline" width="25" height="25">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Kinda Ok Thing</h3>
+                        <p class="project-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, minus obcaecati magnam reprehenderit ea veniam suscipit aliquid eaque sed, delectus in nostrum aut ratione fuga unde? Minima error saepe dolor temporibus minus quaerat rem vero?</p>
+                        <div class="project__icons">
+                            <img src="images/star-plus-outline.svg" alt="star-plus-outline" width="25" height="25">
+                            <img src="images/eye-plus-outline.svg" alt="eye-plus-outline" width="25" height="25">
+                            <img src="images/share-variant-outline.svg" alt="share-variant-outline" width="25" height="25">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Muey Awesome Thing</h3>
+                        <p class="project-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit est enim eum doloremque itaque porro voluptates tempora illum amet, maxime rem? Sequi provident molestias architecto quasi aspernatur, ab repudiandae maxime!</p>
+                        <div class="project__icons">
+                            <img src="images/star-plus-outline.svg" alt="star-plus-outline" width="25" height="25">
+                            <img src="images/eye-plus-outline.svg" alt="eye-plus-outline" width="25" height="25">
+                            <img src="images/share-variant-outline.svg" alt="share-variant-outline" width="25" height="25">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Some Cool Item</h3>
+                        <p class="project-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quia optio alias assumenda molestiae explicabo quam soluta quos nobis eaque.</p>
+                        <div class="project__icons">
+                            <img src="images/star-plus-outline.svg" alt="star-plus-outline" width="25" height="25">
+                            <img src="images/eye-plus-outline.svg" alt="eye-plus-outline" width="25" height="25">
+                            <img src="images/share-variant-outline.svg" alt="share-variant-outline" width="25" height="25">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Maybe Likeable Thing</h3>
+                        <p class="project-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repellat commodi, iusto unde mollitia quae necessitatibus suscipit pariatur numquam? Temporibus id voluptatum cum suscipit, nobis ullam aliquam non repudiandae molestiae!</p>
+                        <div class="project__icons">
+                            <img src="images/star-plus-outline.svg" alt="star-plus-outline" width="25" height="25">
+                            <img src="images/eye-plus-outline.svg" alt="eye-plus-outline" width="25" height="25">
+                            <img src="images/share-variant-outline.svg" alt="share-variant-outline" width="25" height="25">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents__col-two">
+                <div class="col-two__top">
+                    <h3>Announcements</h3>
+                    <div class="announcements">
+                        <div class="maint">
+                            <h4>Site Maintenance</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est recusandae debitis incidunt vitae voluptatum ipsa quod, tempore saepe?</p>
+                            <span></span>
+                        </div>
+                        <div class="comm">
+                            <h4>Community Share Day</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis saepe culpa excepturi.</p>
+                            <span></span>
+                        </div>
+                        <div class="priv">
+                            <h4>Updated Privacy Policy</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sapiente ratione, soluta blanditiis voluptas dolorem?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-two__lower">
+                    <h3>Trending</h3>
+                    <div class="trending"></div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>

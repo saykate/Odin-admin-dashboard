@@ -32,6 +32,15 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  :root {
+    --clr-yel: rgb(239, 209, 131);
+    --clr-rust: rgb(153, 100, 87);
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+  }
   
   .main__container {
     display: grid;
@@ -47,7 +56,8 @@
   }
 
   .sidebar__container {
-    background: rgb(239, 209, 131);
+    font-weight: 700;
+    background-color: var(--clr-yel);
     padding: 15px;
     grid-area: sidebar;
     display: grid;
@@ -66,7 +76,7 @@
     grid-template-columns: 40px 1fr;
     align-items: center;
     padding-left: 10px;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 
   .dashboard {
@@ -82,13 +92,15 @@
 
   .header__container {
     grid-area: header;
-    padding: 2rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 4;
   }
 
   .top__menu {
-    /* border: 1px solid black; */
     display: grid;
     align-items: center;
     align-content: start;
@@ -100,6 +112,7 @@
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr;
     align-items: center;
+    gap: .75rem;
   }
 
   .search__icon {
@@ -115,14 +128,10 @@
 
   .info__bar {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: auto auto 1fr;
     align-items: center;
-    justify-items: start;
-  }
-
-  .alarm__icon {
-    justify-self: end;
+    gap: 1.5rem;
+    margin-left: 5rem;
   }
 
   .user__icon {
@@ -131,15 +140,25 @@
     border-radius: 50%;
     background-image: url(./images/james-discombe-06o01CtKjGw-unsplash\ copy.jpeg);
     background-size: cover;
-    margin-left: 25px;
+  }
+
+  .user__name {
+    font-size: .8rem;
   }
 
   .lower__menu {
-    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    gap: 14rem;
   }
+
+  .lower__left {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    }
 
   .user__icon-lower {
     background-image: url('images/james-discombe-06o01CtKjGw-unsplash\ copy.jpeg');
@@ -148,19 +167,42 @@
     border-radius: 50%;
   }
 
-  .lower__left {
-    border: 1px solid pink;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: start;
+  .line-one {
+    font-size: .75rem;
+  }
+
+  .line-two {
+    font-size: 1.2rem;
   }
 
   .lower__right {
-    border: 1px solid pink;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .lower__right button {
+    border-radius: 20px;
+    font-size: .75rem;
+    border: none;
+    padding: 7px 10px;
+    background-color: var(--clr-yel);
   }
 
   .contents__container {
-    border: 1px solid rosybrown;
     grid-area: content;
     display: grid;
+    background-color: var(--clr-rust);
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .projects__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .project__icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
