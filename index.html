@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Admin Dashboard</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <main class="main__container">
-        <div class="sidebar__container">
+    <div class="main__container">
+        <nav class="sidebar__container">
             <div class="dashboard sidebar__item">
                 <img src="images/view-dashboard.svg" alt="arrows pointing in all directions" height="40px" width="40px">
                 <p>Dashboard</p>
@@ -20,45 +21,45 @@
             <div class="sidebar-nav__container">
                 <div class="sidebar__item">
                     <img src="images/home-heart (1).svg" alt="home logo with a heart inside" height="25px" width="25px">
-                    <p>Home</p>
+                    <a href="#" class="sidebar-link"><p>Home</p></a>
                 </div>
                 <div class="sidebar__item">
                     <img src="images/card-account-details.svg" alt="home logo with a heart inside" height="25px" width="25px">
-                    <p>Profile</p>
+                    <a href="#" class="sidebar-link"><p>Profile</p></a>
                 </div>
                 <div class="sidebar__item">
                     <img src="images/message.svg" alt="home logo with a heart inside" height="25px" width="25px">
-                    <p>Messages</p>
+                    <a href="#" class="sidebar-link"><p>Messages</p></a>
                 </div>
                 <div class="sidebar__item">
                     <img src="images/clock-time-four.svg" alt="home logo with a heart inside" height="25px" width="25px">
-                    <p>History</p>
+                    <a href="#" class="sidebar-link"><p>History</p></a>
                 </div>
                 <div class="sidebar__item">
                     <img src="images/file-multiple.svg" alt="home logo with a heart inside" height="25px" width="25px">
-                    <p>Tasks</p>
+                    <a href="#" class="sidebar-link"><p>Tasks</p></a>
                 </div>
                 <div class="sidebar__item">
                     <img src="images/account-group.svg" alt="home logo with a heart inside" height="25px" width="25px">
-                    <p>Communities</p>
+                    <a href="#" class="sidebar-link"><p>Communities</p></a>
                 </div>
             </div>
             <div class="support__container">
                 <div class="sidebar__item">
                     <img src="images/cog.svg" alt="home logo with a heart inside" height="25px" width="25px">
-                    <p>Settings</p>
+                    <a href="" class="sidebar-link"><p>Settings</p></a>
                 </div>
                 <div class="sidebar__item">
                     <img src="images/help-box.svg"home logo with a heart inside" height="25px" width="25px">
-                    <p>Support</p>
+                    <a href="" class="sidebar-link"><p>Support</p></a>
                 </div>
                 <div class="sidebar__item">
                     <img src="images/shield-check.svg" alt="home logo with a heart inside" height="25px" width="25px">
-                    <p>Privacy</p>
+                    <a href="" class="sidebar-link"><p>Privacy</p></a>
                 </div>
             </div>
-        </div>
-        <div class="header__container">
+        </nav>
+        <header class="header__container">
             <div class="top__menu">
                 <div class="search">
                     <label for="input__bar" class="search__icon"><img src="images/magnify.svg" alt="search icon" width="25px" height="25px"></label>
@@ -84,8 +85,8 @@
                     <button>Share</button>
                 </div>
             </div>
-        </div>
-        <div class="contents__container">
+        </header>
+        <main class="contents__container">
             <div class="contents__col-one">
                 <h2>Your Projects</h2>
                 <div class="projects__container">
@@ -148,7 +149,7 @@
             <div class="contents__col-two">
                 <div class="col-two__top">
                     <h3>Announcements</h3>
-                    <div class="announcements">
+                    <div class="card announcements">
                         <div class="maint">
                             <h4>Site Maintenance</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est recusandae debitis incidunt vitae voluptatum ipsa quod, tempore saepe?</p>
@@ -167,10 +168,10 @@
                 </div>
                 <div class="col-two__lower">
                     <h3>Trending</h3>
-                    <div class="trending"></div>
+                    <div class="card trending"></div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
 </body>
 </html>
