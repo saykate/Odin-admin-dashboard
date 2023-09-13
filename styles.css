@@ -10,6 +10,7 @@
 
   body {
     font-family: 'Inter', sans-serif;
+    height: 100vh;
   }
   
   .main__container {
@@ -26,15 +27,15 @@
    display: none;
   }
 
-  .sidebar__container {
+  .nav__container {
     font-weight: 700;
     background-color: var(--clr-yel);
     padding: 15px;
     grid-area: sidebar;
     display: grid;
-    grid-template-rows: 1fr 6fr 3fr 8fr;
+    grid-template-rows: auto 1fr;
     align-items: start;
-    gap: 1.25rem;
+    gap: 3rem;
   }
 
   .dashboard {
@@ -50,7 +51,7 @@
     gap: 3rem;
   }
 
-  .sidebar__item {
+  .nav__item {
     display: grid;
     gap: 10px;
     grid-template-columns: 40px 1fr;
@@ -60,7 +61,7 @@
     font-size: 1.2rem;
   }
 
-  .sidebar__item a {
+  .nav__item a {
     text-decoration: none;
     color: black;
   }
@@ -98,10 +99,9 @@
     border-radius: 20px;
     border: none;
     background-color: lightgray;
-    width: ;
   }
 
-  .info__bar {
+  .user__info {
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: center;
@@ -135,7 +135,7 @@
     gap: var(--gap-med);
     }
 
-  .user__icon-lower {
+  .user__icon-large {
     background-image: url('images/james-discombe-06o01CtKjGw-unsplash\ copy.jpeg');
     width: 60px;
     height: 60px;
@@ -260,7 +260,7 @@
     .hamburger {
       display: grid;
     }
-    .sidebar__container {
+    .nav__container {
       grid-template-rows: auto;
       box-shadow: var(--box-shadow);
     }
@@ -309,7 +309,7 @@
     .top__menu {
       justify-content: center;
     }
-    .info__bar {
+    .user__info {
       display: none;
     }
     .lower__menu {
@@ -322,7 +322,7 @@
       justify-items: center;
       grid-template-columns: auto auto;
     }
-    .user__icon-lower {
+    .user__icon-large {
       width: 40px;
       height: 40px;
     }
