@@ -7,6 +7,7 @@ function setNavMenuOffsetTop() {
 }
 
 function openNavMenu() {
+  
   /* 
         Setting display to grid when the button is clicked is a hacky way to prevent
         the slide out animation from triggering on page load.
