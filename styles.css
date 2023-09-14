@@ -23,8 +23,13 @@
     ;
   }
 
-  .hamburger {
+  #hamburger {
    display: none;
+  }
+
+  .icon {
+    height: 60px;
+    width: 60px;
   }
 
   .nav__container {
@@ -257,7 +262,7 @@
       "content"
       ;
     }
-    .hamburger {
+    #hamburger {
       display: grid;
     }
     .nav__container {
@@ -283,11 +288,12 @@
     .dashboard {
       display: grid;
       grid-template-columns: auto 1fr auto;
+      align-items: center;
     }
     
-    .hamburger #top-line,
-    .hamburger #bottom-line,
-    .hamburger #middle-line {
+    .icon #top-line,
+    .icon #bottom-line,
+    .icon #middle-line {
       transform-box: fill-box;
       transform-origin: center;
     }
